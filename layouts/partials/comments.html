@@ -1,0 +1,22 @@
+{{- with site.Params.giscus -}}
+{{- if and $.IsPage .repo .repoId .categoryId -}}
+<div class="comments" style="margin: 2em 0;">
+  <script src="https://giscus.app/client.js"
+    data-repo="{{ .repo }}"
+    data-repo-id="{{ .repoId }}"
+    data-category="{{ .category | default "Announcements" }}"
+    data-category-id="{{ .categoryId }}"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="{{ if eq $.Lang "cn" }}zh-CN{{ else }}en{{ end }}"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+{{- end -}}
+{{- end -}}
