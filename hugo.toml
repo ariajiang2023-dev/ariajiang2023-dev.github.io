@@ -9,7 +9,8 @@ enableRobotsTXT = true
   footer = "Xinyi Jiang"
   showBackToTopButton = true
   socialIcons = [
-    {name = "github", url = "https://github.com/ariajiang2023-dev"}
+    {name = "github", url = "https://github.com/ariajiang2023-dev"},
+    {name = "email", url = "mailto:xjiang363@wisc.edu"}
   ]
   customCommentHTML = """
 <script src="https://giscus.app/client.js"
@@ -39,3 +40,7 @@ enableRobotsTXT = true
     name = "Posts"
     url = "/posts/"
     weight = 2
+  [[menu.main]]
+    name = "CV"
+    url = "/cv.pdf"
+    weight = 3
