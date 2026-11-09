@@ -1,0 +1,41 @@
+baseURL = "https://ariajiang2023-dev.github.io/"
+locale = "en"
+theme = "gokarna"
+title = "Xinyi (Aria) Jiang"
+enableRobotsTXT = true
+
+[params]
+  description = "Econometrics · Measurement · AI and Society"
+  footer = "Xinyi Jiang"
+  showBackToTopButton = true
+  socialIcons = [
+    {name = "github", url = "https://github.com/ariajiang2023-dev"}
+  ]
+  customCommentHTML = """
+<script src="https://giscus.app/client.js"
+  data-repo="ariajiang2023-dev/ariajiang2023-dev.github.io"
+  data-repo-id="R_kgDOVnkNSA"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOVnkNSM4DKsNw"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async>
+</script>
+"""
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
